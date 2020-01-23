@@ -1,0 +1,50 @@
+apiVersion: v1
+entries:
+  spring-cloud-data-flow:
+  - apiVersion: v1
+    appVersion: 2.3.0.RELEASE
+    created: "2020-01-23T10:52:38.202821274Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.1.0
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 0.6.16
+    - condition: rabbitmq-ha.enabled
+      name: rabbitmq-ha
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.27.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://kubernetes-charts-incubator.storage.googleapis.com/
+      version: 0.13.11
+    - condition: features.monitoring.enabled
+      name: prometheus
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 9.3.1
+    - condition: features.monitoring.enabled
+      name: grafana
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 4.0.2
+    description: Toolkit for building data processing pipelines.
+    digest: 35a5df1f3f903e0ebf53964b4764e1338b0f62c4e8b1c3c2c8c85ccff5280e1f
+    home: http://cloud.spring.io/spring-cloud-dataflow/
+    icon: https://raw.githubusercontent.com/spring-io/dataflow.spring.io/master/src/images/dataflow-icon.png
+    maintainers:
+    - email: trisberg@pivotal.io
+      name: trisberg
+    - email: cschaefer@pivotal.io
+      name: chrisjs
+    - email: sanandan@pivotal.io
+      name: sabbyanandan
+    name: spring-cloud-data-flow
+    sources:
+    - https://github.com/spring-cloud/spring-cloud-dataflow
+    - https://github.com/spring-cloud/spring-cloud-skipper
+    urls:
+    - spring-cloud-data-flow-2.5.2.tgz
+    version: 2.5.2
+generated: "2020-01-23T10:52:38.037909953Z"
