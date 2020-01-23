@@ -3,12 +3,12 @@ entries:
   spring-cloud-data-flow:
   - apiVersion: v1
     appVersion: 2.3.0.RELEASE
-    created: "2020-01-23T11:16:53.365056393Z"
+    created: "2020-01-23T11:34:55.84288229Z"
     dependencies:
     - condition: mysql.enabled
       name: mysql
       repository: https://kubernetes-charts.storage.googleapis.com/
-      version: 1.1.0
+      version: 1.6.2
     - condition: rabbitmq.enabled
       name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -30,7 +30,7 @@ entries:
       repository: https://kubernetes-charts.storage.googleapis.com/
       version: 4.0.2
     description: Toolkit for building data processing pipelines.
-    digest: cffae9beab7813ca988d703f0821ed9cda4ae44ef9685884896b3556bb857f63
+    digest: 1c4dea4db5318c8576717a494449de4f23583a705d10a8a0bc882933376add37
     home: http://cloud.spring.io/spring-cloud-dataflow/
     icon: https://raw.githubusercontent.com/spring-io/dataflow.spring.io/master/src/images/dataflow-icon.png
     maintainers:
@@ -47,4 +47,4 @@ entries:
     urls:
     - spring-cloud-data-flow-2.5.2.tgz
     version: 2.5.2
-generated: "2020-01-23T11:16:53.226411327Z"
+generated: "2020-01-23T11:34:55.651921803Z"
